@@ -21,8 +21,8 @@ namespace rownania
             {
                 delta = Math.Sqrt(delta);
 
-                double x1 = (-b - delta) / 2 * a;
-                double x2 = (-b + delta) / 2 * a;
+                double x1 = (-b - delta) / (2 * a);
+                double x2 = (-b + delta) / (2 * a);
 
                 Console.WriteLine(x1);
                 Console.WriteLine(x2);
