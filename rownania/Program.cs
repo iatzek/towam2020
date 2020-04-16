@@ -26,6 +26,9 @@ namespace rownania
 
                 Console.WriteLine(x1);
                 Console.WriteLine(x2);
+            } else
+            {
+                Console.WriteLine("brak rozwiązań rzeczywistych");
             }
 
 
