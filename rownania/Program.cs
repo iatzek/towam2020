@@ -6,7 +6,15 @@ namespace rownania
     {
         static void Main(string[] args)
         {
-            double a = 1, b = 0, c = -25;
+            double a, b, c;
+
+            Console.WriteLine("Wprowadź a");
+            a = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Wprowadź b");
+            b = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Wprowadź c");
+            c = Double.Parse(Console.ReadLine());
+
             double delta = Math.Sqrt(b * b - 4 * a * c);
 
             double x1 = (-b - delta) / 2 * a;
