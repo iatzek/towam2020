@@ -15,13 +15,18 @@ namespace rownania
             Console.WriteLine("Wprowadź c");
             c = Double.Parse(Console.ReadLine());
 
-            double delta = Math.Sqrt(b * b - 4 * a * c);
+            double delta = (b * b - 4 * a * c);
 
-            double x1 = (-b - delta) / 2 * a;
-            double x2 = (-b + delta) / 2 * a;
+            if (delta >= 0)
+            {
+                delta = Math.Sqrt(delta);
 
-            Console.WriteLine(x1);
-            Console.WriteLine(x2);
+                double x1 = (-b - delta) / 2 * a;
+                double x2 = (-b + delta) / 2 * a;
+
+                Console.WriteLine(x1);
+                Console.WriteLine(x2);
+            }
 
 
         }
